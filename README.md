@@ -1,74 +1,55 @@
-# Steganography-
-Steganography - Hide a Secret Text in Image
+# Data Hider - Hide Secret Text in Images
 
-Overview
+## Overview
+This is a simple steganography tool that allows users to hide and retrieve secret messages within image files using the **Least Significant Bit (LSB)** method. It is built with Python, **Tkinter** for the GUI, and **stegano** for image steganography.
 
-Steganography is a simple steganography tool built using Python and Tkinter that allows users to hide a secret text message inside an image. The tool uses the Least Significant Bit (LSB) steganography method for encoding and decoding messages within images.
+## Features
+- Load and display images.
+- Hide text messages inside images.
+- Retrieve hidden messages from images.
+- Save the modified image with hidden data.
 
-Features
+## Requirements
+Ensure you have the following dependencies installed:
 
-Load and display an image.
-
-Hide a secret text message inside the selected image.
-
-Retrieve the hidden text from an encoded image.
-
-Save the image with the hidden message.
-
-Simple and user-friendly GUI.
-
-Technologies Used
-
-Python
-
-Tkinter (GUI framework)
-
-Pillow (PIL) for image processing
-
-Stegano (for LSB steganography)
-
-Installation
-
-Ensure you have Python installed on your system (Python 3.x recommended).
-
-Install the required dependencies using pip:
-
+```bash
 pip install pillow stegano
+```
 
-Download or clone the project repository.
+## How to Use
 
-Run the script using:
+1. **Run the Application**
+   ```bash
+   python main.py
+   ```
 
-python steganography.py
+2. **Open an Image**
+   - Click "Open Image" and select an image file (PNG or JPG).
+   
+3. **Hide a Message**
+   - Enter a secret message in the text box.
+   - Click "Hide Data" to embed the message into the image.
+   - Save the modified image using "Save Image".
 
-Usage
+4. **Reveal a Message**
+   - Open an image with hidden text.
+   - Click "Show Data" to retrieve the message.
 
-Open Image: Click the "Open Image" button to select an image file.
+## File Structure
+```
+├── main.py        # Main application script
+├── logo.png       # Application logo
+├── README.md      # Project documentation
+└── requirements.txt # Dependency list
+```
 
-Hide Data: Enter the secret message in the text box and click "Hide Data" to encode it in the image.
+## License
+This project is open-source and licensed under the MIT License.
 
-Save Image: Save the image with the hidden data by clicking "Save Image".
+## Contribution
+Feel free to submit issues or pull requests to improve this tool!
 
-Show Data: Retrieve and display the hidden message by clicking "Show Data".
-
-File Structure
-
-|-- steganography.py (Main Script)
-|-- logo.jpg (Application Icon)
-|-- logo.png (Application Logo)
-|-- hidden.png (Output Image with Hidden Data)
-
-Dependencies
-
-Python 3.x
-
-Tkinter (Built-in with Python)
-
-Pillow (PIL Fork)
-
-Stegano
+## Author
+[Phanindra Singarapu]
 
 
-Author
-
-Phanindra Singarapu
